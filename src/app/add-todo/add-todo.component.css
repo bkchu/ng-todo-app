@@ -1,0 +1,57 @@
+.add-todo {
+  margin-bottom: 5rem;
+  display: flex;
+}
+.add-todo * {
+  font-size: 1.5rem;
+}
+input {
+  flex: 1;
+  height: 5rem;
+  border: none;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  padding-left: 2rem;
+  margin-right: 1rem;
+}
+
+.priorityDropdown {
+  height: 5rem;
+  border: none;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 2rem;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: white;
+  margin-right: 1rem;
+  outline: none;
+  transition: all 400ms;
+}
+
+.Low.priorityDropdown:hover {
+  background: #62e875;
+}
+.Medium.priorityDropdown:hover {
+  background: #f4df45;
+}
+.High.priorityDropdown:hover {
+  background: #f25f5f;
+}
+
+.addButton {
+  height: 5rem;
+  border: none;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 2rem;
+  background-color: #c65a35;
+  color: white;
+}
+
+.Low {
+  border-left: 2px solid #62e875;
+}
+.Medium {
+  border-left: 2px solid #f4df45;
+}
+.High {
+  border-left: 2px solid #f25f5f;
+}

@@ -1,0 +1,34 @@
+<div class="add-todo">
+  <input
+    type="text"
+    [(ngModel)]="todo"
+    (keyup.enter)="addTodo()"
+    placeholder="Add Todo..."
+  >
+  <select
+    class="priorityDropdown"
+    [(ngModel)]="currentPriority"
+    id="priority"
+    [ngClass]="currentPriority"
+  >
+    <option
+      value="Low"
+      disabled
+      selected
+    >
+      Select A Priority
+    </option>
+    <option
+      *ngFor="let item of priorities"
+      [value]="item"
+    >
+      {{item}}
+    </option>
+  </select>
+  <button
+    (click)="addTodo()"
+    class="addButton"
+  >
+    Add
+  </button>
+</div>

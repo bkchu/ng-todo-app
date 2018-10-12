@@ -1,0 +1,8 @@
+<app-list-item
+  *ngFor="let item of list; let i = index;"
+  [index]="i"
+  [todo]="item.todo"
+  [completed]="item.completed"
+  [priority]="item.priority"
+>
+</app-list-item>

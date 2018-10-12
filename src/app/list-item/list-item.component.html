@@ -1,0 +1,25 @@
+<div
+  class="item"
+  [ngClass]="[priority, completed && 'complete'].join(' ')"
+  (click)="toggleComplete()"
+>
+  <div class="circle--outer">
+    <div
+      class="circle--inner"
+      [ngClass]="!completed &&'incomplete'"
+    ></div>
+  </div>
+  <p
+    [ngStyle]="{cursor: 'pointer'}"
+    class="item__text"
+    [ngClass]="completed &&'complete'"
+  >
+    {{ todo }}
+  </p>
+  <button
+    (click)="delete()"
+    [ngStyle]="{cursor: 'pointer'}"
+  >
+    X
+  </button>
+</div>
