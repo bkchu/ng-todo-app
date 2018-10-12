@@ -15,9 +15,7 @@ export class AddTodoComponent implements OnInit {
 
   constructor(private todoService: TodoServiceService) {}
 
-  ngOnInit() {
-    console.log(Priority);
-  }
+  ngOnInit() {}
 
   addTodo() {
     if (this.todo) {
