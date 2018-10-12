@@ -5,7 +5,11 @@ import { Priority } from './priority.enum';
   providedIn: 'root'
 })
 export class TodoServiceService {
-  private todos: Todo[] = [];
+  private todos: Todo[] = [
+    new Todo(
+      'asdfasdfasfdasdfasdfasfdasdfasdfasfdasdfasdfasfdasdfasdfasfdasdfasdfasfdasdfasdfasfdasdfasdfasfd'
+    )
+  ];
   constructor() {}
 
   addTodo(todo: Todo) {
